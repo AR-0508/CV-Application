@@ -3,9 +3,16 @@ import Education from "./components/Education.jsx";
 import Experience from "./components/Experience.jsx";
 import CVPreview from "./components/CVPreview.jsx";
 
+import {useState} from "react";
 import "./styles/App.css";
 
 function App() {
+  const [generalInfo, setGeneralInfo] = useState({
+    name: "",
+    email: "",
+    phoneNo: "",
+  });
+
   return (
     <div className="app">
       <header>
@@ -15,7 +22,7 @@ function App() {
 
       <main>
         <section className="forms">
-          <GeneralInfo />
+          <GeneralInfo  generalInfo = {generalInfo} setGeneralInfo = {setGeneralInfo}/>
           <Education />
           <Experience />
         </section>
