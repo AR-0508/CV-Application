@@ -1,12 +1,6 @@
 import {useState} from "react";
 
-function Education(){
-    const [educationInfo, setEducationInfo] = useState({
-        schoolName : "",
-        title : "",
-        date : ""
-    })
-
+function Education({educationInfo, setEducationInfo}){
     const [isEditing, setIsEditing] = useState(true);
 
     function handleChange(e){

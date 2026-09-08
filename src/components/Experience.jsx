@@ -1,14 +1,6 @@
 import { useState } from "react";
 
-function Experience() {
-    const [experienceInfo, setExperienceInfo] = useState({
-        companyName : "",
-        position : "",
-        responsibilities : "",
-        startDate : "",
-        endDate : ""
-    });
- 
+function Experience({experienceInfo, setExperienceInfo}) {
   const [isEditing, setIsEditing] = useState(true);
 
   function handleChange(event) {

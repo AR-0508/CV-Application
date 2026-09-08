@@ -1,0 +1,27 @@
+.cv-preview {
+  background-color: white;
+  padding: 3rem;
+  min-height: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preview-header {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.prev-group {
+  margin-bottom: 2rem;
+}
+
+.prev-group h3 {
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.prev-group p {
+  margin: 0.5rem 0;
+}

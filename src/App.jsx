@@ -13,6 +13,21 @@ function App() {
     phoneNo: "",
   });
 
+  const [educationInfo, setEducationInfo] = useState({
+        schoolName : "",
+        title : "",
+        date : ""
+    });
+
+  const [experienceInfo, setExperienceInfo] = useState({
+        companyName : "",
+        position : "",
+        responsibilities : "",
+        startDate : "",
+        endDate : ""
+    });
+ 
+
   return (
     <div className="app">
       <header>
@@ -23,12 +38,12 @@ function App() {
       <main>
         <section className="forms">
           <GeneralInfo  generalInfo = {generalInfo} setGeneralInfo = {setGeneralInfo}/>
-          <Education />
-          <Experience />
+          <Education educationInfo={educationInfo} setEducationInfo= {setEducationInfo}/>
+          <Experience experienceInfo = {experienceInfo} setExperienceInfo = {setExperienceInfo}/>
         </section>
 
         <section className="preview">
-          <CVPreview />
+          <CVPreview generalInfo ={generalInfo} educationInfo = {educationInfo} experienceInfo = {experienceInfo}/>
         </section>
       </main>
     </div>
