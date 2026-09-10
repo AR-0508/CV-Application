@@ -1,3 +1,3 @@
-# React + Vite
+# CV-Application
 
-This Project is used to demonstrate the React states and the different techniques learnt thus far in The Odin Project.
+This Project is used to demonstrate the React states knowledge learned thus far in The Odin Project.
